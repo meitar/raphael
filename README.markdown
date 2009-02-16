@@ -115,9 +115,15 @@ Resizes the element by the given multiplier.
 
 #### attr
 
-Sets the attributes of elements directly.
+Gets or sets the attributes of elements directly.
 
 ##### Parameters
+
+To get an attribute value:
+
+1. attributeName string
+
+To set an attribute value:
 
 1. attributeName string
 2. value string
@@ -162,8 +168,10 @@ Please refer to the [SVG specification](http://www.w3.org/TR/SVG/) for an explan
 ##### Usage
 
     var c = paper.circle(10, 10, 10);
-    c.attr("fill", "black");                              // using strings
-    c.attr({fill: "#000", stroke: "#f00", opacity: 0.5}); // using params object
+    c.attr("fill", "black");                              // Set using strings
+    alert(c.attr("fill"));                                // "black"
+    c.attr({fill: "#000", stroke: "#f00", opacity: 0.5}); // Set using params object
+    alert(c.attr("fill"));                                // "#000"
 
 #### animate
 
