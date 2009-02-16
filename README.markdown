@@ -472,6 +472,15 @@ Closes the path being drawn.
 
     var c = paper.path({stroke: "#036"}).moveTo(10, 10).andClose();
 
+#### remove
+
+Erases a path (removing the object).
+
+##### Usage
+
+    var c = paper.path({stroke: "#036"}).moveTo(10, 10).andClose(); // Create a path.
+    c.remove();                                                     // Erase it.
+
 ## License
 
 [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
